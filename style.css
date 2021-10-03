@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+.gradient-type{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+select{
+    padding: 10px 15px;
+    background: #fff;
+    color: #2c2ea5;
+    font-size: 15px;
+    font-weight: 500;
+    border: 3px solid #2c2ea5;
+    border-radius: 10px;
+}
+
+select:hover{
+    background: #2c2ea5;
+    color: #fff;
+}
+
+option:hover{
+    background: #000;
+}
+
+.gradient-box{
+    height: 300px;
+    width: 400px;
+    background: linear-gradient(to left, #2c2ea5, #892ca5);
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.47);
+}
+
+.colors{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.color{
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    outline: none !important;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    transition: transform .2s;
+}
+
+.color::-moz-color-swatch{
+    border-radius: 50%;
+}
+
+.code-btn, .modal-btn{
+    cursor: pointer;
+    width: max-content;
+    padding: 10px 20px;
+    background: rgb(61, 61, 248);
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: .5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: transform .2s;
+}
+
+.code-btn:active, input:active, .modal-btn:active{
+    transform: scale(1.2);
+}
+
+.modal-div{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.modal{
+    position: relative;
+    background: #fff;
+    padding: 2rem 4rem 2rem 2rem;
+    border-radius: 10px;
+}
+
+.modal-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.modal-icon{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+}
+
+.modal-icon:active{
+    color: #2c2ea5;
+}
+
+.code-div{
+    margin-top: 20px;
+    padding: 15px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background: #cacaca;
+}
+
+.toast-notification{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #2c2ea5;
+    padding: 1rem 5rem 1rem 1rem;
+    color: #fff;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.toast-icon{
+    cursor: pointer;
+}
+
+.toast-text{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+

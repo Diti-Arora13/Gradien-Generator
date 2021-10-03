@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Graident Generator</title>
+</head>
+<body>
+
+    <div class="gradient-type">
+        <select>
+            <option value="linear">Linear gradient</option>
+            <option value="radial">Radical gradient</option>
+            <option value="conic">Conic gradient</option>
+        </select>
+    </div>
+
+    <main>
+        <h1 class="title">CSS GRADIENT GENERATOR</h1>
+        <div class="gradient-box"></div>
+        
+        <div class="colors">
+            <input type="color" class="color color1" value="#2c2ea5"> 
+            <input type="color" class="color color2" value="#892ca5">
+        </div>
+        
+        <button class="code-btn">CSS Code</button>
+    </main>
+
+    <div class="modal-div">
+        <div class="modal">
+
+            <i class="modal-icon fas fa-times"></i>
+            
+            <p class="modal-title">CSS Code - </p>
+            <div class="code-div">
+                <p class="modal-css">gradientBox.style.background = `linear-gradient(to left, ${color[1].value} , ${color[0].value}</p>
+            </div>
+            <button class="modal-btn">Copy the code</button>
+        </div>
+    </div>
+    
+    <div class="toast-notification">
+        <i class="toast-icon fas fa-times"></i>
+        <span class="toast-text">CSS Copied</span>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
